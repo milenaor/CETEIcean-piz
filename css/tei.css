@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 body {
-  font-size: 12pt;
+  font-size: 18pt;
+  width: 900px;
+  margin: auto;
+  background-color: #D9D9D9;
 }
 
 tei-body {
@@ -8,9 +14,89 @@ tei-body {
 
 tei-head {
   display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 180%;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+  font-family: 'Dancing Script', cursive;
+}
+
+tei-head tei-persname {
+  font-variant: normal;
+
+}
+
+tei-persname {
+  font-variant: small-caps;
+
 }
 
 tei-p {
   display: block;
+  padding: 1rem;
+  background-color: #4a6d8c91;
+  font-family: 'Dancing Script', cursive;
+  color: white;
 }
 
+
+
+tei-div {
+display:block;
+padding: 1rem;
+}
+
+tei-div[type="manuscrito"]{
+  font-family: 'Ms Madi', cursive;
+}
+
+tei-div[type="impreso"]{
+  font-family: monospace;
+  font-size: 80%;
+  background-color: #C2D9C1;
+
+}
+
+tei-foreign {
+  text-decoration: underline;
+}
+
+tei-abbr {
+  display: none;
+}
+
+tei-corr{
+  color: rgb(226, 43, 43);
+  font-weight: bold;
+}
+
+tei-del {
+  color: green
+  text-decoration: line-through;
+}
+
+tei-add {
+  color:yellow;
+  font-weight: bold;
+}
+
+tei-gap {
+  background-color: rgb(189, 121, 32);
+}
+
+tei-gap::before {
+content: "    ";
+white-space: pre;
+}
+
+tei-lb::before{
+  white-space: pre;
+  content: "\A";
+}
+
+tei-signed {
+  font-size: 110%;
+  color: #A6633C;
+}
+ 
